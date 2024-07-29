@@ -67,7 +67,7 @@ O sistema é uma solução para o gerenciamento de bibliotecas, abordando divers
 
 1. Clone o repositório: 
 ```bash
-https://github.com/iaracampos/library_management.git
+git clone https://github.com/iaracampos/library_management.git
 cd library_management
-
+  
 
