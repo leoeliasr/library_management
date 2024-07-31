@@ -48,6 +48,10 @@ O sistema é uma solução para o gerenciamento de bibliotecas, abordando divers
 - **Atualizar Usuário**: Atualizar informações dos usuários existentes.
 - **Login**: Permitir que os usuários façam login no sistema.
 - **Excluir Reserva**: Remover reservas do sistema.
+- **Cadastrar empréstimo**: Adicionar novos empréstimo ao sistema.
+- **Excluir Empréstimo**: Remover empréstimos do sistema.
+- **Alterar Empréstimo**: Atualizar informações dos empréstimos existentes.
+- **Consultar Empréstimo**: Consultar informações sobre empréstimos
 
 ## Tecnologias Utilizadas
 - **Ruby on Rails**: Framework back-end 
