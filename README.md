@@ -65,13 +65,10 @@ O sistema é uma solução para o gerenciamento de bibliotecas, abordando divers
 - **Leonardo Elias Rodrigues**
 - **Samuel Henrique Morais**
 
-
-
 ## Como Executar o Projeto 
 
 1. Clone o repositório: 
 ```bash
 git clone https://github.com/iaracampos/library_management.git
 cd library_management
-  
 
