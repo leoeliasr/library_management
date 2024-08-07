@@ -37,7 +37,7 @@ O sistema é uma solução para o gerenciamento de bibliotecas, abordando divers
 
 *Tabelas envolvidas: `LIVRO`, `USER`, `EMPRÉSTIMO`*
 
-### Devolver Livro
+#### Devolver Livro
 - **Selecionar Livro**: Escolher o livro a ser devolvido.
 - **Registrar Data de Devolução**: Registrar a data em que o livro foi devolvido.
 - **Atualizar Disponibilidade do Livro**: Atualizar o status de disponibilidade do livro no sistema.
