@@ -37,15 +37,16 @@ O sistema é uma solução para o gerenciamento de bibliotecas, abordando divers
 
 *Tabelas envolvidas: `LIVRO`, `USER`, `EMPRÉSTIMO`*
 
-#### Atualizar Informações de Livro e Notificar Usuários
-- **Selecionar Livro**: Escolher o livro a ser atualizado.
-- **Atualizar Informações**: Atualizar informações como disponibilidade ou localização do livro.
-- **Identificar Usuários com Reservas Ativas**: Identificar os usuários que têm reservas ativas para o livro atualizado.
-- **Enviar Notificações**: Notificar os usuários sobre a atualização do livro.
+### Devolver Livro
+- **Selecionar Livro**: Escolher o livro a ser devolvido.
+- **Registrar Data de Devolução**: Registrar a data em que o livro foi devolvido.
+- **Atualizar Disponibilidade do Livro**: Atualizar o status de disponibilidade do livro no sistema.
+
+*Tabelas envolvidas: `LIVRO`, `USER`, `EMPRÉSTIMO`, `RESERVA`
 
 ## Outras funcionalidades
 - **Cadastrar Usuário**: Adicionar novos usuários ao sistema.
-- **Atualizar Usuário**: Atualizar informações dos usuários existentes.
+- **Consultar Usuário**: Consultar informações sobre usuários existentes.
 - **Login**: Permitir que os usuários façam login no sistema.
 - **Excluir Reserva**: Remover reservas do sistema.
 - **Cadastrar empréstimo**: Adicionar novos empréstimo ao sistema.
