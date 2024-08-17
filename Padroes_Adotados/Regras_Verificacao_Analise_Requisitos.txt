@@ -16,7 +16,4 @@ VERSÁTIL, FLEXÍVEL, APROXIMADAMENTE, TÃO LOGO QUANTO POSSÍVEL, TALVEZ, PROVA
 
 4- Manter a estrutura hierárquica do requisito, ou seja, encaixar um novo requisito como detalhamento de um requisito anterior. 
 
-5- Transformar o requisitos de usuário em requisitos de software.
-
-6- Definir requisitos funcionais para cada requisito macro ou caso de uso. 
 

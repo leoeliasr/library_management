@@ -30,12 +30,11 @@ O sistema é uma solução para o gerenciamento de bibliotecas, abordando divers
 
 *Tabelas envolvidas: `LIVRO`, `USER`, `RESERVA`*
 
-#### Consultar Histórico de Empréstimos de um Usuário
-- **Selecionar Usuário**: Escolher o usuário cujo histórico será consultado.
-- **Listar Empréstimos**: Listar todos os empréstimos associados ao usuário, incluindo informações dos livros e datas de empréstimo e devolução.
-- **Exibir Detalhes dos Livros**: Exibir detalhes como título e autor dos livros emprestados.
+#### Excluir Empréstimo
+- **Selecionar Empréstimo**: Escolher o empréstimo a ser excluído.
+- **Atualizar Disponibilidade do Livro**: - Atualizar o status de disponibilidade do livro no sistema.
 
-*Tabelas envolvidas: `LIVRO`, `USER`, `EMPRÉSTIMO`*
+*Tabelas envolvidas: `LIVRO`, `USER`, `EMPRÉSTIMO`
 
 #### Devolver Livro
 - **Selecionar Livro**: Escolher o livro a ser devolvido.
@@ -50,13 +49,13 @@ O sistema é uma solução para o gerenciamento de bibliotecas, abordando divers
 - **Login**: Permitir que os usuários façam login no sistema.
 - **Excluir Reserva**: Remover reservas do sistema.
 - **Cadastrar empréstimo**: Adicionar novos empréstimo ao sistema.
-- **Excluir Empréstimo**: Remover empréstimos do sistema.
+
 - **Alterar Empréstimo**: Atualizar informações dos empréstimos existentes.
 - **Consultar Empréstimo**: Consultar informações sobre empréstimos
 
 ## Tecnologias Utilizadas
 - **Ruby on Rails**: Framework back-end 
-- **PostgreSQL**: Banco de dados para armazenar informações sobre livros, usuários, empréstimos e reservas.
+- **PostgreSQL**: Banco de dados para armazenar informações sobre livros, usuários, empréstimos e reservas. - psql (PostgreSQL) 16.3
 - **RSpec**: Ferramenta para testes 
 - **React**: Framework front-end
   
