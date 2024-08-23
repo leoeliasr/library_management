@@ -1,3 +1,29 @@
+<<<<<<< HEAD
+# README
+
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+Things you may want to cover:
+
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
+=======
 ﻿
 # Gerenciamento de Bibliotecas
 
@@ -30,11 +56,12 @@ O sistema é uma solução para o gerenciamento de bibliotecas, abordando divers
 
 *Tabelas envolvidas: `LIVRO`, `USER`, `RESERVA`*
 
-#### Excluir Empréstimo
-- **Selecionar Empréstimo**: Escolher o empréstimo a ser excluído.
-- **Atualizar Disponibilidade do Livro**: - Atualizar o status de disponibilidade do livro no sistema.
+#### Consultar Histórico de Empréstimos de um Usuário
+- **Selecionar Usuário**: Escolher o usuário cujo histórico será consultado.
+- **Listar Empréstimos**: Listar todos os empréstimos associados ao usuário, incluindo informações dos livros e datas de empréstimo e devolução.
+- **Exibir Detalhes dos Livros**: Exibir detalhes como título e autor dos livros emprestados.
 
-*Tabelas envolvidas: `LIVRO`, `USER`, `EMPRÉSTIMO`
+*Tabelas envolvidas: `LIVRO`, `USER`, `EMPRÉSTIMO`*
 
 #### Devolver Livro
 - **Selecionar Livro**: Escolher o livro a ser devolvido.
@@ -49,13 +76,13 @@ O sistema é uma solução para o gerenciamento de bibliotecas, abordando divers
 - **Login**: Permitir que os usuários façam login no sistema.
 - **Excluir Reserva**: Remover reservas do sistema.
 - **Cadastrar empréstimo**: Adicionar novos empréstimo ao sistema.
-
+- **Excluir Empréstimo**: Remover empréstimos do sistema.
 - **Alterar Empréstimo**: Atualizar informações dos empréstimos existentes.
 - **Consultar Empréstimo**: Consultar informações sobre empréstimos
 
 ## Tecnologias Utilizadas
 - **Ruby on Rails**: Framework back-end 
-- **PostgreSQL**: Banco de dados para armazenar informações sobre livros, usuários, empréstimos e reservas. - psql (PostgreSQL) 16.3
+- **PostgreSQL**: Banco de dados para armazenar informações sobre livros, usuários, empréstimos e reservas.
 - **RSpec**: Ferramenta para testes 
 - **React**: Framework front-end
   
@@ -72,3 +99,4 @@ O sistema é uma solução para o gerenciamento de bibliotecas, abordando divers
 git clone https://github.com/iaracampos/library_management.git
 cd library_management
 
+>>>>>>> 0aea0c332fc9e2445dc538b7c541de8e8888312b
