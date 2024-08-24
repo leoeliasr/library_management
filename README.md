@@ -54,10 +54,12 @@ O sistema é uma solução para o gerenciamento de bibliotecas, abordando divers
 - **Consultar Empréstimo**: Consultar informações sobre empréstimos
 
 ## Tecnologias Utilizadas
-- **Ruby on Rails**: Framework back-end 
-- **PostgreSQL**: Banco de dados para armazenar informações sobre livros, usuários, empréstimos e reservas. - psql (PostgreSQL) 16.3
-- **RSpec**: Ferramenta para testes 
-- **React**: Framework front-end
+
+- **Ruby**: 3.1.2
+- **Ruby on Rails**: 7.1.3.4
+- **PostgreSQL**: 16.3
+- **React**: 18.3.1
+
   
 - ## Colaboradores
 
@@ -65,10 +67,4 @@ O sistema é uma solução para o gerenciamento de bibliotecas, abordando divers
 - **Leonardo Elias Rodrigues**
 - **Samuel Henrique Morais**
 
-## Como Executar o Projeto 
-
-1. Clone o repositório: 
-```bash
-git clone https://github.com/iaracampos/library_management.git
-cd library_management
 

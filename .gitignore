@@ -1,0 +1,81 @@
+# Logs
+/log/*.log
+/log/*.log.[0-9]
+
+# Tempfiles
+/tmp/*
+!/tmp/.keep
+
+# Cache
+/cache/*
+!/cache/assets
+/public/assets
+/public/packs
+/public/packs-test
+
+# Uploaded files
+/storage/*
+!/storage/.keep
+
+# Backup files
+*.bak
+*.swp
+*.swo
+
+# Test coverage
+/coverage/
+
+# Bundler
+/.bundle/
+
+# Environment variables
+.env
+.env.*
+
+# Database
+/db/*.sqlite3
+/db/*.sqlite3-journal
+
+# Byebug
+.byebug_history
+
+# Rails
+/public/system
+/storage/*
+!/storage/.keep
+/public/uploads
+
+# IDEs and editors
+/.idea
+*.suo
+*.ntvs_analysis.dat
+*.ncb
+*.sw?
+*.swo
+*.DS_Store
+*.project
+*.classpath
+/.vscode/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Yarn
+.yarn-integrity
+/.yarn/*
+!.yarn/patches
+
+# NPM
+node_modules/
+npm-debug.log
+
+# Docker
+docker-compose.override.yml
+docker-compose.local.yml
+
+# Misc
+*.log
+*.pid
+*.seed
+*.pid.lock
