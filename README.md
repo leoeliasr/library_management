@@ -95,7 +95,7 @@ Testes Independentes: Os testes devem ser pequenos, rápidos e independentes, ve
 - **Ruby**: 3.1.2
 - **Ruby on Rails**: 7.1.3.4
 - **PostgreSQL**: 16.3
-- **React**: 18.3.1
+- **Bootstrap**: 5.0.0 
 
   
 - ## Colaboradores
