@@ -1,37 +1,42 @@
-<%= form_with(model: livro) do |form| %>
-  <% if livro.errors.any? %>
-    <div style="color: red">
-      <h2><%= pluralize(livro.errors.count, "Erro") %> este livro não pode ser salvo</h2>
-
-      <ul>
-        <% livro.errors.each do |error| %>
-          <li><%= error.full_message %></li>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-4 col-lg-3 font-roboto-mono">
+      <%= form_with(model: livro, local: true) do |form| %>
+        <% if livro.errors.any? %>
+          <div class="alert alert-info">
+            <h4 class="alert-heading fs-6"><%= pluralize(livro.errors.count, "Erro") %> Este livro não pode ser salvo</h4>
+            <ul class="mb-0" style="font-size: 0.75rem; color: #007bff;"> 
+              <% livro.errors.full_messages.each do |message| %>
+                <li><%= message %></li>
+              <% end %>
+            </ul>
+          </div>
         <% end %>
-      </ul>
+
+        <div class="mb-2">
+          <%= form.label :nome, class: 'form-label fs-6' %>
+          <%= form.text_field :nome, class: 'form-control form-control-sm bg-custom-color' %>
+        </div>
+
+        <div class="mb-2">
+          <%= form.label :isbn, class: 'form-label fs-6' %>
+          <%= form.text_field :isbn, class: 'form-control form-control-sm bg-custom-color' %>
+        </div>
+
+        <div class="mb-2">
+          <%= form.label :autor, class: 'form-label fs-6' %>
+          <%= form.text_field :autor, class: 'form-control form-control-sm bg-custom-color' %>
+        </div>
+
+        <div class="mb-2">
+          <%= form.label :genero, class: 'form-label fs-6' %>
+          <%= form.text_field :genero, class: 'form-control form-control-sm bg-custom-color' %>
+        </div>
+
+        <div class="d-flex justify-content-end mt-3 custom-btn padding-btn">
+          <%= form.submit 'Cadastrar Livro', class: 'btn btn-primary custom-btn' %>
+        </div>
+      <% end %>
     </div>
-  <% end %>
-
-  <div>
-    <%= form.label :nome, style: "display: block" %>
-    <%= form.text_field :nome %>
   </div>
-
-  <div>
-    <%= form.label :isbn, style: "display: block" %>
-    <%= form.text_field :isbn %>
-  </div>
-
-  <div>
-    <%= form.label :autor, style: "display: block" %>
-    <%= form.text_field :autor %>
-  </div>
-
-  <div>
-    <%= form.label :genero, style: "display: block" %>
-    <%= form.text_field :genero %>
-  </div>
-
-  <div>
-     <%= form.submit 'Cadastrar Livro', class: 'btn btn-primary' %>
-  </div>
-<% end %>
+</div>

@@ -1,1 +1,22 @@
 @import "bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap');
+
+.font-roboto-mono {
+    font-family: 'Roboto Mono', monospace;
+  }
+  
+  .padding-cadastrar {
+    padding: 45px; 
+  }
+  .padding-btn {
+    padding: 20px; 
+  }
+  .custom-btn {
+    font-size: 0.9rem;
+    padding: 7px 13px; 
+  }
+  
+
+  .bg-custom-color {
+    background-color: #E0DFDF !important; /* Define a cor de fundo */
+  }

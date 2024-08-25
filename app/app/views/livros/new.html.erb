@@ -1,9 +1,12 @@
-<h1>Cadastrar Livro</h1>
+<h2 class="text-center font-roboto-mono padding-cadastrar">
+  Cadastro de Livros
+</h2>
 
 <%= render "form", livro: @livro %>
 
-<br>
-
-<div>
-  <%= link_to "Voltar aos livros", livros_path %>
+<div class="position-absolute top-0 start-0 mt-3 ms-3 font-roboto-mono">
+  <%= link_to livros_path, class: 'd-flex align-items-center link' do %>
+    <i class="bi bi-arrow-return-left fs-3"></i>
+    <span class="ms-2 fs-6">Voltar livro</span> <!-- Adjust size using fs-6 for small text -->
+  <% end %>
 </div>
