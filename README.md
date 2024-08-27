@@ -119,10 +119,32 @@ library_management/
 
 ```
 
-- ## Colaboradores
+## Regras e Padrões de Uso do Git
+
+Commits
+
+- Descrever de forma clara e objetiva o propósito do commit.
+- Usar gerúndio para definir a mensagem do commit.
+- Manter os commits atômicos, abordando apenas uma alteração lógica por vez.
+- Relacionar os commits com as issues registradas no backlog.
+
+Branches
+
+- Utilizar branches para os códigos.
+- Realizar o merge dessas branches com a branch "main" apenas após a fase de testes e verificação da correção das funcionalidades.
+- Criar branches específicas para correções críticas.
+- Utilizar letras minúsculas ao nomear branches.
+
+Organização
+
+- Manter estrutura de diretórios clara, separando a documentação do código.
+
+
+
+## Colaboradores
 
 - **Iara Campos Rodrigues**
 - **Leonardo Elias Rodrigues**
-- **Samuel Henrique Morais**
+- **Samuel Henrique Morais Rufino**
 
 
