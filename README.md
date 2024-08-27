@@ -97,7 +97,28 @@ Testes Independentes: Os testes devem ser pequenos, rápidos e independentes, ve
 - **PostgreSQL**: 16.3
 - **Bootstrap**: 5.0.0 
 
-  
+## Estrutura de Diretório
+
+```sh
+library_management/
+|-- Documentação/
+|   |-- Diagramas/
+|   |-- Requisitos/
+|-- Padrões Adotados/
+|-- app/
+|   |-- app
+|       |-- assets
+|       |-- controllers
+|       |-- models
+|       |-- views
+|   |-- db
+|       |-- migrate
+|   |-- config
+|   |-- log
+|-- README.md
+
+```
+
 - ## Colaboradores
 
 - **Iara Campos Rodrigues**
