@@ -1,26 +1,30 @@
-<div id="<%= dom_id livro %>">
-  <p>
-    <strong>Nome:</strong>
-    <%= livro.nome %>
-  </p>
-
-  <p>
-    <strong>Isbn:</strong>
-    <%= livro.isbn %>
-  </p>
-
-  <p>
-    <strong>Autor:</strong>
-    <%= livro.autor %>
-  </p>
-
-  <p>
-    <strong>Genero:</strong>
-    <%= livro.genero %>
-  </p>
-  
-  <p>
-  <strong>Disponobilidade:</strong>
-  <%= livro.disponivel %>
-</p>
-</div>
+<table class="table table-bordered font-roboto-mono w-75 mx-auto">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nome</th>
+      <th>Isbn</th>
+      <th>Autor</th>
+      <th>Gênero</th>
+      <th>Disponibilidade</th>
+      <% if !@show_detail %>
+        <th>Ações</th> 
+      <% end %>
+    </tr>
+  </thead>
+  <tbody>
+    <tr id="<%= dom_id livro %>">
+      <td><%= livro.id %></td>
+      <td><%= livro.nome %></td>
+      <td><%= livro.isbn %></td>
+      <td><%= livro.autor %></td>
+      <td><%= livro.genero %></td>
+      <td><%= livro.disponivel ? 'Disponível' : 'Indisponível' %></td>
+      <% if !@show_detail %>
+        <td>
+          <%= link_to 'Mostrar Livro', livro_path(livro), class: 'link' %> 
+        </td>
+      <% end %>
+    </tr>
+  </tbody>
+</table>
