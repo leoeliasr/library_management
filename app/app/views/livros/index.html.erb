@@ -1,14 +1,14 @@
-<p style="color: green"><%= notice %></p>
+<p style="color: green; font-family: 'Roboto Mono', sans-serif;"><%= notice %></p>
 
-<h1>Livros</h1>
-
-<div id="livros">
-  <% @livros.each do |livro| %>
-    <%= render livro %>
-    <p>
-      <%= link_to "Mostrar Livro", livro %>
-    </p>
+<div class="position-absolute top-0 start-0 mt-3 ms-3 font-roboto-mono">
+  <%= link_to new_livro_path, class: 'd-flex align-items-center link' do %>
+    <i class="bi bi-plus-square fs-4"></i></i></i>
+    <span class="ms-2 fs-6">Criar Livro</span> 
   <% end %>
 </div>
 
-<%= link_to "Criar Livro", new_livro_path %>
+<div id="livros" style="font-family: 'Roboto Mono', sans-serif; margin-top: 80px; padding: 20px;">
+  <% @livros.each do |livro| %>
+    <%= render livro %>
+  <% end %>
+</div>
