@@ -1,0 +1,24 @@
+<h1>Empréstimo</h1>
+
+<p>
+  <b>Usuário:</b>
+  <%= @emprestimo.usuario.nome %>
+</p>
+
+<p>
+  <b>Livro:</b>
+  <%= @emprestimo.livro.titulo %>
+</p>
+
+<p>
+  <b>Data Empréstimo:</b>
+  <%= @emprestimo.data_emprestimo %>
+</p>
+
+<p>
+  <b>Data Devolução:</b>
+  <%= @emprestimo.data_devolucao %>
+</p>
+
+<%= link_to 'Editar', edit_emprestimo_path(@emprestimo), class: "btn btn-primary" %>
+<%= link_to 'Voltar', emprestimos_path, class: "btn btn-secondary" %>

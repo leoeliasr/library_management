@@ -1,28 +1,20 @@
 class EmprestimosController < ApplicationController
     before_action :set_emprestimo, only: %i[show edit update destroy]
   
-    # GET /emprestimos
-    # GET /emprestimos.json
     def index
       @emprestimos = Emprestimo.all
     end
   
-    # GET /emprestimos/1
-    # GET /emprestimos/1.json
     def show
     end
   
-    # GET /emprestimos/new
     def new
       @emprestimo = Emprestimo.new
     end
   
-    # GET /emprestimos/1/edit
     def edit
     end
   
-    # POST /emprestimos
-    # POST /emprestimos.json
     def create
       @emprestimo = Emprestimo.new(emprestimo_params)
   
@@ -37,8 +29,6 @@ class EmprestimosController < ApplicationController
       end
     end
   
-    # PATCH/PUT /emprestimos/1
-    # PATCH/PUT /emprestimos/1.json
     def update
       respond_to do |format|
         if @emprestimo.update(emprestimo_params)
@@ -51,8 +41,7 @@ class EmprestimosController < ApplicationController
       end
     end
   
-    # DELETE /emprestimos/1
-    # DELETE /emprestimos/1.json
+
     def destroy
       @emprestimo.destroy
       respond_to do |format|
@@ -69,7 +58,7 @@ class EmprestimosController < ApplicationController
   
       # Only allow a list of trusted parameters through.
       def emprestimo_params
-        params.require(:emprestimo).permit(:usuario_id, :livro_id, :data_empréstimo, :data_devolução)
+        params.require(:emprestimo).permit(:usuario_id, :livro_id, :data_emprestimo, :data_devolucao)
       end
   end
 

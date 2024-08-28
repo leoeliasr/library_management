@@ -1,0 +1,6 @@
+<h1 class="font-roboto-mono">Editar Empréstimo</h1>
+
+<%= render 'form', emprestimo: @emprestimo %>
+
+<%= link_to 'Apagar', emprestimo_path(@emprestimo), method: :delete, data: { confirm: "Você tem certeza?" }, class: "btn btn-danger font-roboto-mono" %>
+<%= link_to 'Voltar', emprestimos_path, class: "btn btn-secondary font-roboto-mono" %>

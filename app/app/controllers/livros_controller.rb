@@ -1,6 +1,9 @@
+class SomeController < ApplicationController
+  before_action :require_login, only: [:restricted_action]
+end 
 class LivrosController < ApplicationController
   before_action :set_livro, only: %i[ show edit update destroy ]
-
+  
 def show
   @livro = Livro.find(params[:id])
   @show_detail = true

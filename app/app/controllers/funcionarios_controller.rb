@@ -63,7 +63,6 @@ class FuncionariosController < ApplicationController
       @funcionario = Funcionario.find(params[:id])
     end
 
-    # Only allow a list of trusted parameters through.
     def funcionario_params
       params.require(:funcionario).permit(:email, :senha)
     end

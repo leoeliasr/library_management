@@ -5,6 +5,7 @@ class CreateEmprestimos < ActiveRecord::Migration[7.0]
       t.references :livros, null: false, foreign_key: true
       t.date :data_emprestimo, null: false
       t.date :data_devolucao, null: false
+      
 
       t.timestamps
     end
