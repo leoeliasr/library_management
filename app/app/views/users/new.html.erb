@@ -1,6 +1,6 @@
-<h1>Log In</h1>
+<h1>Sign Up</h1>
 
-<%= form_with url: login_path, local: true do |form| %>
+<%= form_with model: @user, url: signup_path, local: true do |form| %>
   <div class="field">
     <%= form.label :email %>
     <%= form.email_field :email, autofocus: true %>
@@ -11,7 +11,12 @@
     <%= form.password_field :password %>
   </div>
 
+  <div class="field">
+    <%= form.label :password_confirmation %>
+    <%= form.password_field :password_confirmation %>
+  </div>
+
   <div class="actions">
-    <%= form.submit 'Log In' %>
+    <%= form.submit 'Sign Up' %>
   </div>
 <% end %>
