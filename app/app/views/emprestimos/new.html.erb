@@ -1,5 +1,12 @@
-<h1>Novo Empréstimo</h1>
+<h2 class="text-center font-roboto-mono padding-cadastrar">
+    Novo emprestimo
+</h2>
 
 <%= render 'form', emprestimo: @emprestimo %>
 
-<%= link_to 'Voltar', emprestimos_path, class: "btn btn-secondary" %>
+<div class="position-absolute top-0 start-0 mt-3 ms-3 font-roboto-mono">
+  <%= link_to emprestimos_path, class: 'd-flex align-items-center link' do %>
+    <i class="bi bi-arrow-return-left fs-3"></i>
+    <span class="ms-2 fs-6">Voltar Emprestimo</span> 
+  <% end %>
+</div>
