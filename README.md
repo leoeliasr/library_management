@@ -53,41 +53,60 @@ O sistema é uma solução para o gerenciamento de bibliotecas, abordando divers
 - **Alterar Empréstimo**: Atualizar informações dos empréstimos existentes.
 - **Consultar Empréstimo**: Consultar informações sobre empréstimos
 
-# Boas Práticas de Desenvolvimento
-### Comentários e Documentação
-**Código Autoexplicativo:**  Escreva código que seja fácil de entender por si só, mas, quando necessário, adicione comentários para esclarecer trechos complexos.
-**Documentação de Métodos e Funções:** Documente métodos e funções com descrições claras, incluindo o propósito, os parâmetros e os valores de retorno.
-**Código Limpo (Clean Code)**
-Nomes Significativos: Use nomes claros e descritivos para variáveis, métodos e classes, facilitando a compreensão e manutenção do código.
-**Funções Curtas e Objetivas:** Escreva funções que realizam apenas uma tarefa específica. Isso melhora a legibilidade e facilita a manutenção.
-Responsabilidade Única
-**Funções com Responsabilidade Única:** Cada função deve ser responsável por uma única tarefa ou um grupo relacionado de tarefas, promovendo a clareza e a simplicidade.
-Formatação e Organização
-**Consistência:** Mantenha uma formatação consistente (indentação, espaçamento) em todo o código.
-**Organização Lógica:** Agrupe funções e variáveis relacionadas para tornar o código mais legível e organizado.
-Tratamento de Erros
-**Exceções:** Utilize exceções para tratar erros, evitando o uso de códigos de erro ou verificações de retorno. Exceções devem ser usadas apenas em situações excepcionais, não para controle de fluxo.
+## Boas Práticas de Desenvolvimento
 
+**Comentários e Documentação:**
 
-### Testabilidade
-**Código Testável:** Escrever código que seja fácil de testar, separando a lógica de negócios dos detalhes de implementação e dependências.
-Princípios SOLID
-**S - Single Responsibility Principle (SRP):** Cada classe deve ter uma única responsabilidade ou razão para mudar.
-**O - Open/Closed Principle (OCP):** O código deve ser aberto para extensão, mas fechado para modificação.
-**L - Liskov Substitution Principle (LSP):** Subtipos devem ser substituíveis por seus tipos base sem alterar o comportamento do programa.
-**I - Interface Segregation Principle (ISP):** Prefira várias interfaces específicas a uma única interface geral.
-**D - Dependency Inversion Principle (DIP):** Depende de abstrações em vez de implementações concretas.
-### Refatoração
-Melhoria Contínua: Refatorar o código regularmente para melhorar sua estrutura e legibilidade sem alterar seu comportamento externo.
-Evitar Código Duplicado
-DRY (Don't Repeat Yourself): Evitar a duplicação de código para reduzir erros e facilitar alterações futuras.
-### Simplicidade
-KISS (Keep It Simple, Stupid): Manter o código o mais simples possível. Evitando complexidade desnecessária e busque soluções diretas e eficientes para os problemas.
-Controle de Versionamento
-Branch main: Todas as alterações devem ser feitas na branch main. Os commits devem ter nomes claros e descritivos, refletindo a natureza das mudanças.
-Testes Automatizados
-Cobertura de Testes: Assegurar que todas as novas funcionalidades ou alterações sejam cobertas por testes automatizados.
-Testes Independentes: Os testes devem ser pequenos, rápidos e independentes, verificando apenas um comportamento específico por vez. Utilize frameworks como RSpec para implementar e gerenciar esses testes.
+- Código Autoexplicativo: Escrever Código claro e compreensível. Usar comentários para explicar partes complexas quando necessário.
+- Documentar Métodos e Funções: Descrever o propósito, os parâmetros e os valores de retorno de métodos e funções de forma clara.
+
+**Código Limpo (Clean Code):**
+
+- Usar Nomes Significativos: Usar nomes descritivos para variáveis, métodos e classes.
+- Escrever Funções Curtas e Objetivas: Fazer com que cada Função deve realizar uma única tarefa, facilitando a legibilidade e manutenção.
+
+**Responsabilidade Única:**
+
+- Funções com Responsabilidade Única: A função deve focar em uma tarefa específica ou um grupo relacionado de tarefas.
+
+**Formatação e Organização:**
+
+- Consistência: Manter uma formatação consistente no código.
+- Organização Lógica: Agrupar funções e variáveis relacionadas para melhorar a clareza.
+
+**Tratamento de Erros:**
+
+- Exceções: Usar exceções para erros excepcionais, não para controle de fluxo.
+
+**Testabilidade:**
+
+- Código Testável: Separar a lógica de negócios das dependências para facilitar o teste.
+
+**Princípios SOLID:**
+
+- SRP (Single Responsibility Principle): A classe deve ter uma única responsabilidade.
+- OCP (Open/Closed Principle): O código deve ser extensível sem modificar o existente.
+- LSP (Liskov Substitution Principle): Subtipos devem ser substituíveis por seus tipos base.
+ISP (Interface Segregation Principle): Usar várias interfaces específicas em vez de uma única geral.
+-DIP (Dependency Inversion Principle): Depender de abstrações, não de implementações concretas.
+
+Refatoração:
+
+- Melhoria Contínua: Refatorar regularmente para melhorar a estrutura sem mudar o comportamento.
+- Evitar Código Duplicado (DRY): Não repitir códigos para reduzir erros e facilitar manutenção.
+
+**Simplicidade:**
+
+- KISS (Keep It Simple, Stupid): Manter o código simples e evite complexidade desnecessária.
+
+**Controle de Versionamento:**
+
+- Branch main: FAZER alterações na branch main e use commits com mensagens claras.
+
+**Testes Automatizados:**
+
+- Cobertura de Testes: Garantir que novas funcionalidades sejam cobertas por testes automatizados.
+- Testes Independentes: Testes devem ser pequenos e verificar um comportamento específico por vez, usando frameworks apropriados.
 
 
 ## Tecnologias Utilizadas
@@ -97,11 +116,54 @@ Testes Independentes: Os testes devem ser pequenos, rápidos e independentes, ve
 - **PostgreSQL**: 16.3
 - **Bootstrap**: 5.0.0 
 
-  
-- ## Colaboradores
+## Estrutura de Diretório
+
+```sh
+library_management/
+|-- Documentação/
+|   |-- Diagramas/
+|   |-- Requisitos/
+|-- Padrões Adotados/
+|-- app/
+|   |-- app
+|       |-- assets
+|       |-- controllers
+|       |-- models
+|       |-- views
+|   |-- db
+|       |-- migrate
+|   |-- config
+|   |-- log
+|-- README.md
+
+```
+
+## Regras e Padrões de Uso do Git
+
+Commits
+
+- Descrever de forma clara e objetiva o propósito do commit.
+- Usar gerúndio para definir a mensagem do commit.
+- Manter os commits atômicos, abordando apenas uma alteração lógica por vez.
+- Relacionar os commits com as issues registradas no backlog.
+
+Branches
+
+- Utilizar branches para os códigos.
+- Realizar o merge dessas branches com a branch "main" apenas após a fase de testes e verificação da correção das funcionalidades.
+- Criar branches específicas para correções críticas.
+- Utilizar letras minúsculas ao nomear branches.
+
+Organização
+
+- Manter estrutura de diretórios clara, separando a documentação do código.
+
+
+
+## Colaboradores
 
 - **Iara Campos Rodrigues**
 - **Leonardo Elias Rodrigues**
-- **Samuel Henrique Morais**
+- **Samuel Henrique Morais Rufino**
 
 
