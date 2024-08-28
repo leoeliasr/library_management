@@ -53,59 +53,59 @@ O sistema é uma solução para o gerenciamento de bibliotecas, abordando divers
 - **Alterar Empréstimo**: Atualizar informações dos empréstimos existentes.
 - **Consultar Empréstimo**: Consultar informações sobre empréstimos
 
-# Boas Práticas de Desenvolvimento
+## Boas Práticas de Desenvolvimento
 
 **Comentários e Documentação:**
 
-- Código Autoexplicativo: Escreva código claro e compreensível por si só. Use comentários para explicar partes complexas quando necessário.
-- Documentação de Métodos e Funções: Descreva o propósito, os parâmetros e os valores de retorno de métodos e funções de forma clara.
+- Código Autoexplicativo: Escrever Código claro e compreensível. Usar comentários para explicar partes complexas quando necessário.
+- Documentar Métodos e Funções: Descrever o propósito, os parâmetros e os valores de retorno de métodos e funções de forma clara.
 
 **Código Limpo (Clean Code):**
 
-- Nomes Significativos: Use nomes descritivos para variáveis, métodos e classes.
-- Funções Curtas e Objetivas: Cada função deve realizar uma única tarefa, facilitando a legibilidade e manutenção.
+- Usar Nomes Significativos: Usar nomes descritivos para variáveis, métodos e classes.
+- Escrever Funções Curtas e Objetivas: Fazer com que cada Função deve realizar uma única tarefa, facilitando a legibilidade e manutenção.
 
 **Responsabilidade Única:**
 
-- Funções com Responsabilidade Única: Cada função deve focar em uma tarefa específica ou um grupo relacionado de tarefas.
+- Funções com Responsabilidade Única: A função deve focar em uma tarefa específica ou um grupo relacionado de tarefas.
 
 **Formatação e Organização:**
 
-- Consistência: Mantenha uma formatação consistente no código.
-- Organização Lógica: Agrupe funções e variáveis relacionadas para melhorar a clareza.
+- Consistência: Manter uma formatação consistente no código.
+- Organização Lógica: Agrupar funções e variáveis relacionadas para melhorar a clareza.
 
 **Tratamento de Erros:**
 
-- Exceções: Use exceções para erros excepcionais, não para controle de fluxo.
+- Exceções: Usar exceções para erros excepcionais, não para controle de fluxo.
 
 **Testabilidade:**
 
-- Código Testável: Separe a lógica de negócios das dependências para facilitar o teste.
+- Código Testável: Separar a lógica de negócios das dependências para facilitar o teste.
 
 **Princípios SOLID:**
 
-- SRP (Single Responsibility Principle): Cada classe deve ter uma única responsabilidade.
+- SRP (Single Responsibility Principle): A classe deve ter uma única responsabilidade.
 - OCP (Open/Closed Principle): O código deve ser extensível sem modificar o existente.
 - LSP (Liskov Substitution Principle): Subtipos devem ser substituíveis por seus tipos base.
-ISP (Interface Segregation Principle): Use várias interfaces específicas em vez de uma única geral.
--DIP (Dependency Inversion Principle): Dependa de abstrações, não de implementações concretas.
+ISP (Interface Segregation Principle): Usar várias interfaces específicas em vez de uma única geral.
+-DIP (Dependency Inversion Principle): Depender de abstrações, não de implementações concretas.
 
 Refatoração:
 
-- Melhoria Contínua: Refatore regularmente para melhorar a estrutura sem mudar o comportamento.
-- Evitar Código Duplicado (DRY): Não repita código para reduzir erros e facilitar manutenção.
+- Melhoria Contínua: Refatorar regularmente para melhorar a estrutura sem mudar o comportamento.
+- Evitar Código Duplicado (DRY): Não repitir códigos para reduzir erros e facilitar manutenção.
 
 **Simplicidade:**
 
-- KISS (Keep It Simple, Stupid): Mantenha o código simples e evite complexidade desnecessária.
+- KISS (Keep It Simple, Stupid): Manter o código simples e evite complexidade desnecessária.
 
 **Controle de Versionamento:**
 
-- Branch main: Faça alterações na branch main e use commits com mensagens claras.
+- Branch main: FAZER alterações na branch main e use commits com mensagens claras.
 
 **Testes Automatizados:**
 
-- Cobertura de Testes: Garanta que novas funcionalidades sejam cobertas por testes automatizados.
+- Cobertura de Testes: Garantir que novas funcionalidades sejam cobertas por testes automatizados.
 - Testes Independentes: Testes devem ser pequenos e verificar um comportamento específico por vez, usando frameworks apropriados.
 
 
