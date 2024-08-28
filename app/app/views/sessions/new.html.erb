@@ -1,17 +1,128 @@
-<h1>Log In</h1>
-
-<%= form_with url: login_path, local: true do |form| %>
-  <div class="field">
-    <%= form.label :email %>
-    <%= form.email_field :email, autofocus: true %>
+<div class="page-wrapper">
+  <div class="left-section">
+    <%= form_with url: login_path, local: true, class: 'login-form' do |form| %>
+      <label for="email">Email</label>
+      <div class="input-group">
+        <%= form.email_field :email, id: 'email', required: true, class: 'form-control' %>
+      </div>
+      <label for="password">Senha</label>
+      <div class="input-group">
+        <%= form.password_field :password, id: 'password', required: true, class: 'form-control' %>
+      </div>
+      <%= form.submit 'Entrar', class: 'btn-submit' %>
+    <% end %>
   </div>
-
-  <div class="field">
-    <%= form.label :password %>
-    <%= form.password_field :password %>
+  <div class="right-section">
+    <div class="logo">
+      <h1>Bibliotech</h1>
+      <img src="<%= asset_path 'logo.jpg' %>" alt="Bibliotech Logo">
+    </div>
   </div>
+</div>
 
-  <div class="actions">
-    <%= form.submit 'Log In' %>
-  </div>
-<% end %>
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto Mono, sans-serif; 
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:
+}
+
+.page-wrapper {
+    display: flex;
+    width: 100%;
+    max-width: 1280px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.left-section {
+    background-color: 
+    padding: 40px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    padding: 40px;
+    background-color: 
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo h1 {
+    font-size: 2em;
+    color: 
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+
+@media (max-width: 768px) {
+    .page-wrapper {
+        flex-direction: column;
+    }
+    .left-section, .right-section {
+        width: 100%;
+    }
+}style/>
