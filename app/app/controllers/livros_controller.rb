@@ -10,9 +10,9 @@ def show
 end
 
 def index
-  @livros = Livro.all
+  @li vros = Livro.all
   @show_detail = false #adiciona detalhe mostrar livro 
-end
+end 
 
   def new
     @livro = Livro.new

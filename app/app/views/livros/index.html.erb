@@ -1,10 +1,17 @@
 <p style="color: green; font-family: 'Roboto Mono', sans-serif;"><%= notice %></p>
 
 <div class="position-absolute top-0 start-0 mt-3 ms-3 font-roboto-mono">
-  <%= link_to new_livro_path, class: 'd-flex align-items-center link' do %>
-    <i class="bi bi-plus-square fs-4"></i></i></i>
-    <span class="ms-2 fs-6">Criar Livro</span> 
-  <% end %>
+  <div class="button-group">
+    <%= link_to new_livro_path, class: 'd-flex align-items-center link' do %>
+      <i class="bi bi-plus-square fs-4"></i>
+      <span class="ms-2 fs-6">Criar Livro</span>
+    <% end %>
+    <%= link_to emprestimos_path, class: 'd-flex align-items-center link' do %>
+      
+      <i class="bi bi-bookmark fs-3"></i>
+      <span class="ms-2 fs-6">Empréstimos</span>
+    <% end %>
+  </div>
 </div>
 
 <div id="livros" style="font-family: 'Roboto Mono', sans-serif; margin-top: 80px; padding: 20px;">
