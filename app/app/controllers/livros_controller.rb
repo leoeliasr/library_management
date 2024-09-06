@@ -1,6 +1,4 @@
-class SomeController < ApplicationController
-  before_action :require_login, only: [:restricted_action]
-end 
+
 class LivrosController < ApplicationController
   before_action :set_livro, only: %i[ show edit update destroy ]
   
@@ -26,7 +24,7 @@ end
 
     respond_to do |format|
       if @livro.save
-        format.html { redirect_to livro_url(@livro), notice: "Livro foi criado com sucesso!" }
+        format.html { redirect_to livro_url(@livro) }
         format.json { render :show, status: :created, location: @livro }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +36,7 @@ end
   def update
     respond_to do |format|
       if @livro.update(livro_params)
-        format.html { redirect_to livro_url(@livro), notice: "Livro foi editado com sucesso!" }
+        format.html { redirect_to livro_url(@livro)}
         format.json { render :show, status: :ok, location: @livro }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -51,7 +49,7 @@ end
     @livro.destroy!
 
     respond_to do |format|
-      format.html { redirect_to livros_url, notice: "Livro foi excluido com sucesso!" }
+      format.html { redirect_to livros_url }
       format.json { head :no_content }
     end
   end

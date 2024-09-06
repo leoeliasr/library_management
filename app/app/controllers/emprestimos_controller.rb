@@ -20,7 +20,7 @@ class EmprestimosController < ApplicationController
   
       respond_to do |format|
         if @emprestimo.save
-          format.html { redirect_to @emprestimo, notice: 'Emprestimo was successfully created.' }
+          format.html { redirect_to @emprestimo}
           format.json { render :show, status: :created, location: @emprestimo }
         else
           format.html { render :new }
@@ -32,7 +32,7 @@ class EmprestimosController < ApplicationController
     def update
       respond_to do |format|
         if @emprestimo.update(emprestimo_params)
-          format.html { redirect_to @emprestimo, notice: 'Emprestimo was successfully updated.' }
+          format.html { redirect_to @emprestimo }
           format.json { render :show, status: :ok, location: @emprestimo }
         else
           format.html { render :edit }
@@ -45,7 +45,7 @@ class EmprestimosController < ApplicationController
     def destroy
       @emprestimo.destroy
       respond_to do |format|
-        format.html { redirect_to emprestimos_url, notice: 'Emprestimo was successfully destroyed.' }
+        format.html { redirect_to emprestimos_url }
         format.json { head :no_content }
       end
     end
