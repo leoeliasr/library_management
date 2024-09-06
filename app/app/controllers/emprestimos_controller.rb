@@ -51,12 +51,11 @@ class EmprestimosController < ApplicationController
     end
   
     private
-      # Use callbacks to share common setup or constraints between actions.
+      
       def set_emprestimo
         @emprestimo = Emprestimo.find(params[:id])
       end
   
-      # Only allow a list of trusted parameters through.
       def emprestimo_params
         params.require(:emprestimo).permit(:usuario_id, :livro_id, :data_emprestimo, :data_devolucao)
       end

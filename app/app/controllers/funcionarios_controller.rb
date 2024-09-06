@@ -1,25 +1,21 @@
 class FuncionariosController < ApplicationController
   before_action :set_funcionario, only: %i[ show edit update destroy ]
 
-  # GET /funcionarios or /funcionarios.json
+ 
   def index
     @funcionarios = Funcionario.all
   end
 
-  # GET /funcionarios/1 or /funcionarios/1.json
   def show
   end
 
-  # GET /funcionarios/new
   def new
     @funcionario = Funcionario.new
   end
 
-  # GET /funcionarios/1/edit
   def edit
   end
 
-  # POST /funcionarios or /funcionarios.json
   def create
     @funcionario = Funcionario.new(funcionario_params)
 
@@ -33,8 +29,6 @@ class FuncionariosController < ApplicationController
       end
     end
   end
-
-  # PATCH/PUT /funcionarios/1 or /funcionarios/1.json
   def update
     respond_to do |format|
       if @funcionario.update(funcionario_params)
@@ -47,7 +41,6 @@ class FuncionariosController < ApplicationController
     end
   end
 
-  # DELETE /funcionarios/1 or /funcionarios/1.json
   def destroy
     @funcionario.destroy!
 
@@ -58,7 +51,6 @@ class FuncionariosController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
     def set_funcionario
       @funcionario = Funcionario.find(params[:id])
     end
